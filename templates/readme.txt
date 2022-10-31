@@ -1,0 +1,1 @@
+Templates are stored here

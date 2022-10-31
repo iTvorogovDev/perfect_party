@@ -1,0 +1,491 @@
+{
+	"info": {
+		"_postman_id": "870eb063-3f70-458c-b1a5-409b737ff531",
+		"name": "Sample Commands",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "registerCustomer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"sampleUser\",\n\t\"userPassword\": \"foo123\",\n\t\"firstName\": \"Thomas\",\n\t\"lastName\": \"Jameson\",\n\t\"phoneNumber\":\"4161234567\",\n\t\"emailAddress\": \"foo@foo.com\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/registerCustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registerCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerEmployee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"tvorog\",\n\t\"employeePassword\": \"CS348r0cks\",\n\t\"firstName\": \"Igor\",\n\t\"lastName\": \"Tvorogov\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/registerEmployee",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"registerEmployee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addSupplier",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"supplierName\": \"Mad Cats Inc.\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addSupplier",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addSupplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addMenuItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"supplierId\": 1,\n\t\"itemType\": \"MenuItem\",\n\t\"itemName\": \"Pineapple Pizza XL\",\n\t\"itemDescription\": \"The most controversial pizza in history\",\n\t\"price\": \"15.99\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addMenuItem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addMenuItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addFlowerArrangement",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"supplierId\": 1,\n\t\"itemType\": \"Flower Arrangement\",\n\t\"itemName\": \"Bouqet of Roses\",\n\t\"itemDescription\": \"Beautiful flowers, but watch out for the spikes!\",\n\t\"Price\": \"40\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addFlowerArrangement",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addFlowerArrangement"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addDecorItem",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"supplierId\": 1,\n\t\"itemType\": \"Decor Item\",\n\t\"itemName\": \"Balloons\",\n\t\"itemDescription\": \"A bunch of balloons in different colours\",\n\t\"price\": \"10.99\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addDecorItem",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addDecorItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addMusicEntertainmentOption",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"supplierId\": 1,\n\t\"itemType\": \"Music Entertainment\",\n\t\"itemName\": \"Funky Cats Band\",\n\t\"itemDescription\": \"A lively rock band\",\n\t\"price\": 250.54,\n\t\"availableStartDateTime\": \"2019-03-15 12:30:42\",\n\t\"availableEndDateTime\": \"2019-03-16 12:31:23\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addMusicEntertainmentOption",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addMusicEntertainmentOption"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPaymentMethod",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"sampleUser\",\n\t\"cardNumber\": \"0400461295829602\",\n\t\"firstName\": \"Alice\",\n\t\"lastName\": \"Lafferty\",\n\t\"cvv\": \"123\",\n\t\"phoneNumber\": \"123-456-7890\",\n\t\"addressLineOne\": \"25 Elm St\",\n\t\"postalCode\": \"1A23B4\",\n\t\"province\": \"ON\",\n\t\"country\": \"Canada\",\n\t\"expiryDate\": \"2020-12-12\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addPaymentMethod",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addPaymentMethod"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addVenue",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"venueName\": \"Jacqueline's Catering\",\n\t\"address\": \"34 Centre St, Waterloo, ON, 1A2 3B5\",\n\t\"buildingType\": \"Banquet Hall\",\n\t\"capacity\": 140,\n\t\"operationStartTime\": \"17:00:00\",\n\t\"operationEndTime\": \"00:00:00\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addVenue",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addVenue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addBooking",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"bookingType\": \"Wedding\", \n\t\"username\": \"sampleUser\",\n\t\"startDateTime\": \"2020-10-10 18:00:00\",\n\t\"endDateTime\": \"2020-10-11 00:00:00\",\n\t\"venueId\": 1,\n\t\"attendeesNumber\": 120\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/addBooking",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addBooking"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "recordPurchase",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"purchaseDate\": \"2019-07-18\",\n\t\"username\": \"sampleUser\",\n\t\"cardNumber\": \"0400461295829602\",\n\t\"bookingId\": \"1\",\n\t\"amount\": \"420.99\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/recordPurchase",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"recordPurchase"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userLogin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"sampleUser\",\n\t\"userPassword\": \"foo123\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/userLogin",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"userLogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserBookingHistory",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"ThomasSmith\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/getUserBookingHistory",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getUserBookingHistory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDateRangePurchaseSum",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"startDate\": \"2019-06-05\",\n\t\"endDate\": \"2019-06-07\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/getDateRangePurchaseSum",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getDateRangePurchaseSum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSupplierTable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8080/getSupplierTable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getSupplierTable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getItemTable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getItemTable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getItemTable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookingTable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getBookingTable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getBookingTable"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getVenueTable",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getVenueTable",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getVenueTable"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,61 @@
+.history-container {
+    // display: flex;
+    // // flex-direction: column;
+    // align-items: stretch;
+    // text-align: left;
+
+    .booking-item {
+        display: flex;
+        align-items: stretch;
+        align-content: stretch;
+        // justify-content: center;
+
+        color: $background-color;
+        border-radius: 15px;
+        // height: 4rem;
+        margin-bottom: 2rem;
+
+        .date-info {
+            flex: 2;
+            background-color: darken($main-color, 5); 
+            // width: 25%;
+            // height: 100%;
+            float: left;
+            padding: 0.5em;
+            // min-height: 4rem;
+            // border-top-right-radius: 5px;
+            // border-bottom-right-radius: 5px;
+            .date-ymd {
+                font-weight: 600;
+            }
+
+            .date-time {
+                
+            }
+        }
+
+        .booking-info {
+            flex: 4;
+            background-color: $main-color;
+            padding: 0.5em;
+        }
+
+        .venue-info {
+            flex: 4;
+            background-color: lighten($main-color, 2); 
+            float: right;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 0.5em;
+
+            .venue-name {
+                font-weight: 600;
+                font-size: 1.1em;
+            }
+
+            .venue-address {
+                font-size: 0.9em;
+            }
+        }
+    }
+}

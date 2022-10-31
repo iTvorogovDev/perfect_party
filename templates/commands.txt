@@ -1,0 +1,4 @@
+REST API http commands to test the backend
+
+1. Create a user account
+curl -d "username=sampleUser&userPassword=foo123&firstName=Ross&lastName=Jackson&phoneNumber=4168523013&emailAddress=foo@foomail.com" --request POST http://localhost:8080/registerCustomer

@@ -1,0 +1,40 @@
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: $main-color;
+    white-space: nowrap;
+
+    &-branding,
+    &-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+
+    .nav-item {
+        // @include easeTransform;
+
+        padding: 5px;
+        margin: 10px;
+
+        &.current {
+            background-color: darken($main-color, 5);
+            border-radius: 5px;
+        }
+
+        &.current > a {
+            border: 1px $background-color;
+            border-radius: 5px;
+        }
+    }
+
+    .nav-link {
+        display: inline-block;
+        position: relative;
+        font-size: 25px;
+        // padding: 0.2rem;
+        margin: 0 1rem;
+    }
+}

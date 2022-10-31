@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Perfect Party</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="logo"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Client Home
+                    </a>
+                </li>
+                <li class="nav-item current">
+                    <a href="employeehome.html" class="nav-link">
+                        Employee Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h2 class="small-heading">
+            Add new menu item:
+        </h2>
+
+        <div class="register-container">
+            <form id="register-form">
+                <div class="form-item">
+                    <label for="supplierid">Supplier</label>
+                    <select name="supplierid" id="supplierid" name="supplierid" required>
+                    
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="itemname">Item Name</label>
+                    <input type="text" id="itemname" name="itemname" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="itemdescription">Item Description</label>
+                    <input type="itemdescription" id="itemdescription" name="itemdescription" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="price">Price</label>
+                    <input type="number" step="0.01" id="price" name="price" required>
+                </div>
+
+                <input type="submit" id="register-submit" value="Add Menu Item">
+            </form>
+            <!-- <button class="customer-signin">
+                Customer Sign-In
+            </button>
+            <button class="employee-signin">
+                Employee Sign-In
+            </button> -->
+        </div>
+
+        <p id="form-error-message"></p>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/addmenuitem.js"></script>
+</body>
+
+</html>

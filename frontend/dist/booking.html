@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Perfect Party</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="logo"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item logged-out">
+                    <a href="index.html" class="nav-link">
+                        Sign In
+                    </a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a href="register.html" class="nav-link">
+                        Register
+                    </a>
+                </li>
+                <li class="nav-item logged-in">
+                    <a href="portal.html" class="nav-link">
+                        Portal
+                    </a>
+                </li>
+                <li class="nav-item logged-in current">
+                    <a href="booking.html" class="nav-link">
+                        Booking
+                    </a>
+                </li>
+                <li class="nav-item logged-in">
+                    <a href="history.html" class="nav-link">
+                        History
+                    </a>
+                </li>
+                <!-- <li class="nav-item logged-in">
+                    <a href="settings.html" class="nav-link">
+                        Settings
+                    </a>
+                </li> -->
+                <li class="nav-item logged-in">
+                    <a href="addcard.html" class="nav-link">
+                        Add Card
+                    </a>
+                </li>
+                <li class="nav-item logged-in">
+                    <a href="#" class="nav-link" id="sign-out">
+                        Sign Out
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="addevent">
+        <h1 class="small-heading">
+            Book a new event
+        </h1>
+
+        <div class="booking-container">
+            <form id="booking-form">
+                <div class="form-item">
+                    <label for="type">Event Type</label>
+                    <input type="text" id="type" name="type" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="startdatetime">Start Date</label>
+                    <input type="datetime-local" id="startdatetime" name="startdatetime" required>
+                </div>
+                <div class="form-item">
+                    <label for="enddatetime">End Date</label>
+                    <input type="datetime-local" id="enddatetime" name="enddatetime" required>
+                </div>
+                <div class="form-item">
+                    <label for="venueid">Venue</label>
+                    <select name="venueid" id="venueid" name="venueid" required>
+
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="attendees">Attendees</label>
+                    <input type="number" id="attendees" name="attendees" required>
+                </div>
+                <input type="submit" id="booking-submit" value="Book">
+            </form>
+        </div>
+
+        <p id="form-error-message"></p>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/addbooking.js"></script>
+</body>
+
+</html>

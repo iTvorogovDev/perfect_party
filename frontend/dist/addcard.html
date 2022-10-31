@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Perfect Party</title>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <div class="menu-branding">
+                <div class="logo"></div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item logged-out">
+                    <a href="index.html" class="nav-link">
+                        Sign In
+                    </a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a href="register.html" class="nav-link">
+                        Register
+                    </a>
+                </li>
+                <li class="nav-item logged-in">
+                    <a href="portal.html" class="nav-link">
+                        Portal
+                    </a>
+                </li>
+                <li class="nav-item logged-in">
+                    <a href="booking.html" class="nav-link">
+                        Booking
+                    </a>
+                </li>
+                <li class="nav-item logged-in">
+                    <a href="history.html" class="nav-link">
+                        History
+                    </a>
+                </li>
+                <!-- <li class="nav-item logged-in">
+                    <a href="settings.html" class="nav-link">
+                        Settings
+                    </a>
+                </li> -->
+                <li class="nav-item logged-in current">
+                    <a href="addcard.html" class="nav-link">
+                        Add Card
+                    </a>
+                </li>
+                <li class="nav-item logged-in">
+                    <a href="#" class="nav-link" id="sign-out">
+                        Sign Out
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <h1 class="small-heading">
+            Add Credit Card
+        </h1>
+
+        <div class="card-container">
+            <form id="card-form">
+                <div class="form-item">
+                    <label for="cardnumber">Card Number</label>
+                    <input type="text" id="cardnumber" name="cardnumber" maxlength="16" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="expirydate">Expiry Date</label>
+                    <input type="text" id="expirydate" name="expirydate" maxlength="5" pattern="^\d?\d/\d\d$"
+                        title="Format: MM/YY" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" maxlength="3" pattern="^\d\d\d$" title="CVV must be 3 digits"
+                        required>
+                    <!-- oninvalid="setCustomValidity('3 Digits')" -->
+                </div>
+
+                <div class="form-item">
+                    <label for="phonenumber">Phone Number</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="addressline1">Address Line 1</label>
+                    <input type="text" id="addressline1" name="addressline1" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="addressline2">Address Line 2</label>
+                    <input type="text" id="addressline2" name="addressline2">
+                </div>
+
+                <div class="form-item">
+                    <label for="postalcode">Postal Code</label>
+                    <input type="text" id="postalcode" name="postalcode" maxlength="6" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="province">Province</label>
+                    <input type="text" id="province" name="province" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+
+                <input type="submit" id="card-submit" value="Confirm">
+            </form>
+        </div>
+
+        <p id="form-error-message"></p>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/addcard.js"></script>
+</body>
+
+</html>

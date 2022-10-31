@@ -1,0 +1,12 @@
+USE store;
+SELECT * FROM CustomerAccount;
+SELECT * FROM EmployeeAccount;
+SELECT * FROM Supplier;
+SELECT * FROM Item;
+SELECT * FROM MenuItem;
+SELECT * FROM DecorItem;
+SELECT * FROM FlowerArrangement;
+SELECT * FROM MusicEntertainmentOption;
+SELECT * FROM Venue;
+SELECT * FROM Booking;
+SELECT * FROM Purchase;
